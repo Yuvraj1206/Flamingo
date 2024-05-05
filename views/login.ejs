@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flamingo</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <!--Flamingo logo-->
+      <img src="https://i.pinimg.com/564x/31/cd/6a/31cd6a2bc9af2019de0524bfadac9e9c.jpg" alt="pin logo" class="img1" />
+      <p class="header">Login account to see more</p>
+
+      <% if(error.length>0){ %>
+        <p class="error">
+          <%= error %>
+        </p>
+        <% } %>
+
+          <form action="/login" method="post">
+            <input type="text" name="username" placeholder="username" class="detail" /><br />
+            <input type="password" name="password" placeholder="Password" class="detail" />
+            <input type="submit" class="btn int" value="Login">
+          </form>
+
+          <a href="#" style="text-decoration: none; color: rgb(45, 40, 40); font-weight: bolder;">Forgot your
+            password?</a>
+
+          <footer>
+            <p>
+              By continuing, you agree to Flamingo's
+              <b>Terms of Service, Privacy policy.</b>
+            </p>
+            <hr />
+            <a href="/register" style="text-decoration: none; color: rgb(45, 40, 40); font-weight: bolder;">Not on
+              Flamingo yet? Sign up</a>
+          </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>
